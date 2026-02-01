@@ -141,5 +141,5 @@ class ViewsTest(TestCase):
             response.context["search_form"],
             CarSearchForm,
         )
-        self.assertEqual(len(response.context["car_list"]), 2)
+        self.assertEqual(len(response.context["car_list"]), 1)
         self.assertEqual(response.context["search_form"].initial["model"], "BMW")

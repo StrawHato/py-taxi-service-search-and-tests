@@ -2,8 +2,13 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase, Client
 from django.urls import reverse
 
-from taxi.forms import DriverCreationForm, DriverLicenseUpdateForm, ManufacturerSearchForm, DriverSearchForm, \
+from taxi.forms import (
+    DriverCreationForm,
+    DriverLicenseUpdateForm,
+    ManufacturerSearchForm,
+    DriverSearchForm,
     CarSearchForm
+)
 
 
 class FormsTest(TestCase):
